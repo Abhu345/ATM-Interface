@@ -67,12 +67,10 @@ public class aaa {
     void Withdrawl() {
         System.out.print("Enter withdraw Amount:");
         withdrawlAmount = sc.nextInt();
-        if (withdrawlAmount > 2000) {
-            System.out.println("Enter amount less than or equal to 2000");
-        } else {
-            System.out.println("Withdrawl successful");
-            System.out.println("Remaining balance:" + ((amount + depositAmount) - withdrawlAmount));
-        }
+
+        System.out.println("Withdrawl successful");
+        System.out.println("Remaining balance:" + ((amount + depositAmount) - withdrawlAmount));
+
         transaction = withdrawlAmount;
     }
 
